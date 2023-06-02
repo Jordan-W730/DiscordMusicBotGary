@@ -24,7 +24,7 @@ public class MusicBot extends ListenerAdapter {
     public MusicBot() throws InterruptedException {
 
         // INSERT YOUR BOT TOKEN HERE
-        JDABuilder builder = JDABuilder.createDefault("MTEwMDg0OTAyOTQ3NjI2MjAxMA.G3aQ2Y.g7eKjRcXX0jJ1V6ouVvcSrEmwBMpusknCWlu6w");
+        JDABuilder builder = JDABuilder.createDefault("*********************"); // insert bot token here
 
         builder.enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.MESSAGE_CONTENT);
         builder.addEventListeners(this);
@@ -51,7 +51,7 @@ public class MusicBot extends ListenerAdapter {
         this.messageReader = new MessageReader();
 
         // INPUT YOUR SERVERS ID HERE
-        this.yourGuild = jda.getGuildById("1100952687983480872");
+        this.yourGuild = jda.getGuildById("**************"); // insert guild Id here
 
         // create an audioHandler
         this.audioHandler = new AudioHandler(yourGuild);
